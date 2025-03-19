@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Trophy, Star, Twitter, Twitch, Youtube, Globe2, Disc as Discord, TowerControl as GameController } from 'lucide-react';
 import type { Player } from '../types';
-import supabase from './supabase';
+import supabase from '@supabase/supabase-js';
 
 export function PlayerProfile() {
   const { id } = useParams();

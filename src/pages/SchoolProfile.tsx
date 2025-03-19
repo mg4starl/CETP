@@ -16,7 +16,7 @@ const mockSchools = [
     currentRoster: ['Lethal','Admiral'],
     scholarshipInfo: 'Full scholarships available',
     contactEmail: 'esports@ilstu.edu',
-    website: 'https://esports.illinoisstate.edu/'
+    website: 'https://esports.illinoisstate.edu/',
     facilities: 'State-of-the-art gaming arena with 30 high-end gaming stations, practice rooms, and streaming setup',
     achievements: [
       'Overwatch Collegiate Homecoming 2024 Champions',

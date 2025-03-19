@@ -5,17 +5,32 @@ import { Search, Filter } from 'lucide-react';
 // Temporary mock data
 const mockSchools = [
   {
-    id: '1',
+    id: 'IllinoisState',
     name: 'Illinois State University',
     location: 'Normal, IL',
     division: 'I',
     teamName: 'Redbird Esports',
-    logoUrl: 'https://drive.google.com/uc?export=view&id=1YakXq_rLr8biJdyv1dgdiwR9OJW9ITMT',
-    description: 'Leading collegiate esports program with state-of-the-art facilities',
-    currentRoster: [],
+    logoUrl: 'https://cdn.illinoisstate.edu/web/meta/home/homepage.jpg',
+    description: 'public research university in Normal, Illinois, United States. It was founded in 1857 as Illinois State Normal University and is the oldest public university in Illinois.',
+    currentRoster: ['Lethal','Admiral'],
     scholarshipInfo: 'Full scholarships available',
     contactEmail: 'esports@ilstu.edu',
     website: 'https://esports.illinoisstate.edu/'
+    facilities: 'State-of-the-art gaming arena with 30 high-end gaming stations, practice rooms, and streaming setup',
+    achievements: [
+      'Overwatch Collegiate Homecoming 2024 Champions',
+      'Overwatch Collegiate Championship Series',
+      'Collegiate Esports Commissioners Cup 2024',
+      'NACE - Fall 2024 Varsity Premier Playoffs',
+      'NACE Starleague - Spring 2024 Varsity Premier Playoffs',
+      'NECC Legends National Champions 2024',
+      'NECC Division I Champions Fall 2024'
+    ],
+    socialLinks: {
+      twitter: 'https://twitter.com/redbird_esports',
+      twitch: 'https://twitch.tv/redbirdesports',
+      youtube: 'https://youtube.com/@redbirdesports'
+    }
   },
   {
     id: '2',

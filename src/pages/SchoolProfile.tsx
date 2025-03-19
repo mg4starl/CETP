@@ -6,27 +6,31 @@ import type { School } from '../types';
 // Using the same mock data for now - in a real app, this would come from an API
 const mockSchools = [
   {
-    id: '1',
-    name: 'University of Gaming',
-    location: 'Los Angeles, CA',
+    id: 'IllinoisState',
+    name: 'Illinois State University',
+    location: 'Normal, IL',
     division: 'I',
-    teamName: 'Digital Dragons',
-    logoUrl: 'https://images.unsplash.com/photo-1606761568499-6d2451b23c66?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
-    description: 'Leading collegiate esports program with state-of-the-art facilities. Our program focuses on developing both competitive skills and academic excellence. We offer comprehensive support including dedicated coaching staff, mental health resources, and academic tutoring.',
-    currentRoster: [],
-    scholarshipInfo: 'Full and partial scholarships available based on competitive skill and academic performance. Scholarships range from $5,000 to full tuition coverage.',
-    contactEmail: 'esports@uog.edu',
-    website: 'https://uog.edu/esports',
+    teamName: 'Redbird Esports',
+    logoUrl: 'https://cdn.illinoisstate.edu/web/meta/home/homepage.jpg',
+    description: 'public research university in Normal, Illinois, United States. It was founded in 1857 as Illinois State Normal University and is the oldest public university in Illinois.',
+    currentRoster: ['Lethal','Admiral'],
+    scholarshipInfo: 'Full scholarships available',
+    contactEmail: 'esports@ilstu.edu',
+    website: 'https://esports.illinoisstate.edu/'
     facilities: 'State-of-the-art gaming arena with 30 high-end gaming stations, practice rooms, and streaming setup',
     achievements: [
-      'Collegiate Championship Winners 2024',
-      'Regional Champions 2023',
-      'Top 4 National Finals 2022'
+      'Overwatch Collegiate Homecoming 2024 Champions',
+      'Overwatch Collegiate Championship Series',
+      'Collegiate Esports Commissioners Cup 2024',
+      'NACE - Fall 2024 Varsity Premier Playoffs',
+      'NACE Starleague - Spring 2024 Varsity Premier Playoffs',
+      'NECC Legends National Champions 2024',
+      'NECC Division I Champions Fall 2024'
     ],
     socialLinks: {
-      twitter: 'https://twitter.com/uogesports',
-      twitch: 'https://twitch.tv/uogesports',
-      youtube: 'https://youtube.com/@uogesports'
+      twitter: 'https://twitter.com/redbird_esports',
+      twitch: 'https://twitch.tv/redbirdesports',
+      youtube: 'https://youtube.com/@redbirdesports'
     }
   },
   {

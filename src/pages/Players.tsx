@@ -25,21 +25,21 @@ const mockPlayers = [
       }
     },
   {
-    id: '2',
-    username: 'TankMaster',
-    fullName: 'John Smith',
-    email: 'john@example.com',
-    role: 'Tank' as const,
-    rank: 'Master',
-    peakSR: 3800,
+    id: 'Goose',
+    username: 'Goose',
+    fullName: 'Matthew Gisi',
+    email: 'mtgisi@ilstu.edu',
+    role: 'Support' as const,
+    rank: 'Top 500',
+    peakSR: 'Rank #250',
     highlights: ['https://clips.twitch.tv/example2'],
-    bio: 'Main tank player focusing on Reinhardt and Winston. Looking to join a competitive collegiate program.',
-    avatarUrl: 'https://images.unsplash.com/photo-1618336753974-aae8e04506aa?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
-    battleTag: 'TankMaster#67890',
+    bio: 'Matthew "Goose" Gisi (born May 11, 2004) is an American player who is currently playing for Illinois State University.',
+    avatarUrl: 'https://pbs.twimg.com/profile_banners/1395551273810862082/1700348330/1080x360',
+    battleTag: 'Goose#16238',
     socialLinks: {
-      discord: 'tankmaster',
-      twitter: 'https://twitter.com/tankmaster',
-      liquipedia: 'https://liquipedia.net/overwatch/TankMaster'
+      discord: 'goose.gg',
+      twitter: 'https://x.com/ow_goose',
+      liquipedia: 'https://liquipedia.net/overwatch/Goose_(Matthew_Gisi)'
     }
   }
 ];

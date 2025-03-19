@@ -4,7 +4,6 @@ import { Search, Filter } from 'lucide-react';
 
 // Temporary mock data
 const mockPlayers = [
-  {
     {
       id: 'Lethal',
       username: 'Lethal',

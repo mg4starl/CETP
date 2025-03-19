@@ -10,7 +10,7 @@ export function Home() {
           Collegiate Esports Transfer Portal
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-          Connect with top collegiate Esports programs and players. Your collegiate future awaits.
+          Connect with top collegiate Esports programs and players. \nYour collegiate future awaits!
         </p>
       </div>
 

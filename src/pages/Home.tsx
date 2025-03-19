@@ -7,10 +7,10 @@ export function Home() {
     <div className="space-y-12">
       <div className="text-center">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          Overwatch Collegiate Transfer Portal
+          Collegiate Esports Transfer Portal
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-          Connect with top collegiate Esports programs and players. Your next gaming opportunity awaits.
+          Connect with top collegiate Esports programs and players. Your collegiate future awaits.
         </p>
       </div>
 

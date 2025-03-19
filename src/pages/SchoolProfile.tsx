@@ -54,6 +54,27 @@ const mockSchools = [
       twitter: 'https://twitter.com/tiesports',
       discord: 'TIEsports'
     }
+  },
+  {
+    id: 'Maryville',
+    name: 'Maryville University',
+    location: 'Creve Coeur, MO',
+    division: 'I',
+    teamName: 'Maryville Saints',
+    logoUrl: 'https://www.maryville.edu/studentlife/wp-content/uploads/sites/5/2021/03/health-and-wellness-header-image.jpg',
+    description: 'public research university in Normal, Illinois, United States. It was founded in 1857 as Illinois State Normal University and is the oldest public university in Illinois.',
+    currentRoster: ['L','A', 'T', 'd','L'],
+    scholarshipInfo: 'Full scholarships available',
+    contactEmail: 'esports@ilstu.edu',
+    website: 'https://www.maryville.edu/studentlife/esports-clubs/',
+    facilities: 'State-of-the-art gaming arena with 30 high-end gaming stations, practice rooms, and streaming setup',
+    achievements: [
+      'Overwatch Collegiate Homecoming 2024 Champions',
+      'Overwatch Collegiate Championship Series'
+    ],
+    socialLinks: {
+      twitter: 'https://twitter.com/MaryvilleGG',
+    }
   }
 ];
 

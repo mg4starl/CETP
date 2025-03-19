@@ -6,7 +6,7 @@ import type { Player } from '../types';
 // Using the same mock data for now - in a real app, this would come from an API
 const mockPlayers = [
   {
-    id: '1',
+    id: 'Lethal',
     username: 'Lethal',
     fullName: 'Denis Tari',
     email: 'dtari@ilstu.edu',

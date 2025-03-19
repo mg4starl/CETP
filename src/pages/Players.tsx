@@ -5,25 +5,26 @@ import { Search, Filter } from 'lucide-react';
 // Temporary mock data
 const mockPlayers = [
   {
-    id: '1',
-    username: 'ProMercy',
-    fullName: 'Sarah Johnson',
-    email: 'sarah@example.com',
-    role: 'Support' as const,
-    rank: 'Grandmaster',
-    peakSR: 4250,
-    highlights: ['https://clips.twitch.tv/example1'],
-    bio: 'Support main specializing in Mercy and Ana. Former collegiate player with 2 years of competitive experience.',
-    avatarUrl: 'https://images.unsplash.com/photo-1618336753974-aae8e04506aa?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3',
-    battleTag: 'ProMercy#12345',
-    socialLinks: {
-      twitter: 'https://twitter.com/promercy',
-      twitch: 'https://twitch.tv/promercy',
-      discord: 'promercy',
-      liquipedia: 'https://liquipedia.net/overwatch/ProMercy',
-      youtube: 'https://youtube.com/@ProMercy'
-    }
-  },
+    {
+      id: 'Lethal',
+      username: 'Lethal',
+      fullName: 'Denis Tari',
+      email: 'dtari@ilstu.edu',
+      role: 'Damage' as const,
+      rank: 'Top 500',
+      peakSR: 'Rank #1',
+      highlights: ['https://clips.twitch.tv/example1'],
+      bio: 'Denis "Lethal" Tari (born October 1, 2002) is a Turkish player who is currently playing for NTMR.',
+      avatarUrl: 'https://pbs.twimg.com/profile_banners/1100961896616943622/1738878720/1080x360',
+      battleTag: 'Lethal#21513',
+      socialLinks: {
+        twitter: 'https://twitter.com/Lethal_ow',
+        twitch: 'https://twitch.tv/lethal__ow',
+        discord: 'ihavelethal',
+        liquipedia: 'https://liquipedia.net/overwatch/Lethal',
+        youtube: 'https://youtube.com/@lethal6641'
+      }
+    },
   {
     id: '2',
     username: 'TankMaster',

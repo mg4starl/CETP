@@ -1,48 +1,60 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Trophy, Star, Twitter, Twitch, Youtube, Globe2, Disc as Discord, TowerControl as GameController } from 'lucide-react';
 import type { Player } from '../types';
-import supabase from '@supabase/supabase-js';
+import supabase from './supabase'
+
+// Using the same mock data for now - in a real app, this would come from an API
+const mockPlayers = [
+  {
+    id: 'Lethal',
+    username: 'Lethal',
+    fullName: 'Denis Tari',
+    email: 'dtari@ilstu.edu',
+    role: 'Damage' as const,
+    rank: 'Top 500',
+    peakSR: 'Rank #1',
+    highlights: ['https://clips.twitch.tv/example1'],
+    bio: 'Denis "Lethal" Tari (born October 1, 2002) is a Turkish player who is currently playing for NTMR.',
+    avatarUrl: 'https://pbs.twimg.com/profile_banners/1100961896616943622/1738878720/1080x360',
+    battleTag: 'Lethal#21513',
+    socialLinks: {
+      twitter: 'https://twitter.com/Lethal_ow',
+      twitch: 'https://twitch.tv/lethal__ow',
+      discord: 'ihavelethal',
+      liquipedia: 'https://liquipedia.net/overwatch/Lethal',
+      youtube: 'https://youtube.com/@lethal6641'
+    }
+  },
+  {
+    id: 'Goose',
+    username: 'Goose',
+    fullName: 'Matthew Gisi',
+    email: 'mtgisi@ilstu.edu',
+    role: 'Support' as const,
+    rank: 'Top 500',
+    peakSR: 'Rank #250',
+    highlights: ['https://clips.twitch.tv/example2'],
+    bio: 'Matthew "Goose" Gisi (born May 11, 2004) is an American player who is currently playing for Illinois State University.',
+    avatarUrl: 'https://pbs.twimg.com/profile_banners/1395551273810862082/1700348330/1080x360',
+    battleTag: 'Goose#16238',
+    socialLinks: {
+      discord: 'goose.gg',
+      twitter: 'https://x.com/ow_goose',
+      liquipedia: 'https://liquipedia.net/overwatch/Goose_(Matthew_Gisi)'
+    }
+  }
+];
+
 
 export function PlayerProfile() {
   const { id } = useParams();
-  const [player, setPlayer] = useState<Player | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const player = mockPlayers.find(p => p.id === id);
 
-  useEffect(() => {
-    const fetchPlayerData = async () => {
-      try {
-        const { data, error } = await supabase
-          .from('players')  // Make sure 'players' is the table name in your Supabase project
-          .select('*')
-          .eq('id', id)  // Filter by the player ID
-          .single();  // Ensure that we only get a single player result
-
-        if (error) throw error;
-        setPlayer(data);
-      } catch (error) {
-        setError('Player data not found');
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchPlayerData();
-  }, [id]);
-
-  if (loading) {
+  if (!player) {
     return (
       <div className="min-h-[50vh] flex items-center justify-center">
-        <p className="text-xl text-gray-600">Loading...</p>
-      </div>
-    );
-  }
-
-  if (error || !player) {
-    return (
-      <div className="min-h-[50vh] flex items-center justify-center">
-        <p className="text-xl text-gray-600">{error || 'Player not found'}</p>
+        <p className="text-xl text-gray-600">Player not found</p>
       </div>
     );
   }
